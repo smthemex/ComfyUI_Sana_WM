@@ -207,75 +207,6 @@
       ]
     },
     {
-      "id": 14,
-      "type": "Sana_WM_SM_LTXGemma",
-      "pos": [
-        1631.1296799623901,
-        134.71046294631068
-      ],
-      "size": [
-        276.2466796875,
-        126
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": [
-            14
-          ]
-        },
-        {
-          "name": "connectors",
-          "type": "CLIP",
-          "links": [
-            15
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Sana_WM_SM_LTXGemma"
-      },
-      "widgets_values": [
-        "none",
-        "gemma-3-12b-it-qat-Q4_0.gguf",
-        "connector.safetensors"
-      ]
-    },
-    {
-      "id": 16,
-      "type": "SaveVideo",
-      "pos": [
-        1720.1814411935122,
-        433.2001722398856
-      ],
-      "size": [
-        1345.4886152081954,
-        905.201848303032
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "video",
-          "type": "VIDEO",
-          "link": 17
-        }
-      ],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "video/ComfyUI",
-        "auto",
-        "auto"
-      ]
-    },
-    {
       "id": 12,
       "type": "Sana_WM_SM_LTXSampler",
       "pos": [
@@ -333,38 +264,6 @@
       ]
     },
     {
-      "id": 11,
-      "type": "Sana_WM_SM_LTXModel",
-      "pos": [
-        1958.458274420427,
-        69.77115691408476
-      ],
-      "size": [
-        383.69052130439877,
-        82
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            11
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Sana_WM_SM_LTXModel"
-      },
-      "widgets_values": [
-        "sana-wm-refiner.safetensors",
-        "none"
-      ]
-    },
-    {
       "id": 13,
       "type": "Sana_WM_SM_LtxEncode",
       "pos": [
@@ -376,7 +275,7 @@
         200
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -470,7 +369,7 @@
         470.3047987232367
       ],
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -507,7 +406,7 @@
         476.84833539098736
       ],
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -537,7 +436,7 @@
         58
       ],
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -568,7 +467,7 @@
         58
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -595,11 +494,11 @@
         251.43542298537398
       ],
       "size": [
-        421.2592498397838,
-        177.81640796839383
+        433.1599955784202,
+        166
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -638,15 +537,15 @@
       "id": 6,
       "type": "Sana_WM_SM_Camera",
       "pos": [
-        597.4743503162715,
-        495.4133010519798
+        447.87435031627143,
+        466.61329494846404
       ],
       "size": [
-        275.0234375,
+        372.62342834472656,
         226
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -676,6 +575,107 @@
         "",
         false,
         ""
+      ]
+    },
+    {
+      "id": 16,
+      "type": "SaveVideo",
+      "pos": [
+        1721.061320343903,
+        522.0802259508231
+      ],
+      "size": [
+        1345.4886152081954,
+        905.201848303032
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "video/ComfyUI",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "Sana_WM_SM_LTXGemma",
+      "pos": [
+        1631.1296799623901,
+        134.71046294631068
+      ],
+      "size": [
+        276.2466796875,
+        126
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            14
+          ]
+        },
+        {
+          "name": "connectors",
+          "type": "CLIP",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Sana_WM_SM_LTXGemma"
+      },
+      "widgets_values": [
+        "none",
+        "gemma-3-12b-it-qat-Q4_0.gguf",
+        "connector.safetensors"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "Sana_WM_SM_LTXModel",
+      "pos": [
+        1969.1062419253103,
+        66.57674879030546
+      ],
+      "size": [
+        383.69052130439877,
+        82
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Sana_WM_SM_LTXModel"
+      },
+      "widgets_values": [
+        "sana-wm-refiner.safetensors",
+        "none"
       ]
     }
   ],
@@ -866,10 +866,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4885560013813263,
+      "scale": 0.5131581182307069,
       "offset": [
-        99.75327798665174,
-        422.6422956837237
+        -6.389496951936906,
+        339.20447868812505
       ]
     },
     "frontendVersion": "1.43.18"
