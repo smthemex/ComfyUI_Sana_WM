@@ -1,0 +1,16 @@
+[project]
+name = "sana_wm"
+description = "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["flash-linear-attention", "pre-commit", "huggingface-hub", "accelerate", "beautifulsoup4", "#bs4", "came-pytorch", "einops", "ftfy", "#wheel", "psutil", "ninja", "diffusers>=0.37.0", "#clip@git+https://github.com/openai/CLIP.git", "#gradio", "#image-reward", "ipdb", "#mmcv", "omegaconf", "opencv-python", "optimum", "patch_conv", "peft", "protobuf", "pytorch-fid", "regex", "sentencepiece", "tensorboard", "tensorboardX", "timm", "torch", "torchaudio", "torchvision", "transformers", "triton", "wandb", "webdataset", "xformers", "yapf", "spaces", "matplotlib", "termcolor", "pyrallis", "bitsandbytes", "fire", "moviepy", "imageio[pyav,ffmpeg]", "qwen-vl-utils", "lmdb", "absl-py", "ml_collections", "hpsv2", "open_clip_torch", "liger_kernel", "plyfile"]
+
+[project.urls]
+Repository = "https://github.com/smthemex/ComfyUI_Sana_WM"
+#  Used by Comfy Registry https://registry.comfy.org
+
+[tool.comfy]
+PublisherId = "smthemex"
+DisplayName = "ComfyUI_Sana_WM"
+Icon = ""
+includes = []
